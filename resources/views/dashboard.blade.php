@@ -14,10 +14,9 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
     </head>
     <body>
-        <div class="flex flex-row min-h-screen justify-center items-center">
+        <div class="flex flex-row min-h-screen justify-center">
           <div>
-            <h2><b>kanye.rest quotes</b></h2>
-            <br/>          
+            <h2 class="text-2xl p-6 text-center"><b>kanye.rest quotes</b></h2>
             <livewire:kanye />   
           </div>  
         </div>

@@ -2,8 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+@media (min-width: 768px){
+  #kanye-root {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 767px){
+  #kanye-root {
+    width: 100%;
+  }
+}
 
 #kanye-div {
   background: lightgray;
   padding: 5px;
+}
+
+#kanye-div p:not(:last-child){
+  border-bottom: 1px solid black;
 }
