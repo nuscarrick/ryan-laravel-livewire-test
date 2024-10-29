@@ -9,3 +9,12 @@
       @endforeach
   </div>
 </div>
+
+
+@script
+<script>
+    setInterval(() => {
+        $wire.$refresh()
+    }, 60000)
+</script>
+@endscript
