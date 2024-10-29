@@ -15,6 +15,6 @@
 <script>
     setInterval(() => {
         $wire.$refresh()
-    }, 60000)
+    }, {{config('kanye.quote_internal')}})
 </script>
 @endscript

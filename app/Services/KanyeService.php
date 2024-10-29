@@ -14,13 +14,12 @@ class KanyeService
         return $response->body();
     }
 
-    public function getList($limit=5){
+    public function getList($limit=null){
         $data = [];
+        $limit ??= config('kanye.quote_limit');
         foreach(range(1,$limit) as $index) {
             $data[] = $this->fetch();                
         }
         return $data;      
     }
-
-
 }

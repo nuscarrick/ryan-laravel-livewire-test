@@ -23,7 +23,7 @@ class BasicAuthentication
         $credentials = base64_decode(substr($request->header('Authorization'), 6));
         list($username, $password) = explode(':', $credentials);
  
-        if ($username !== self::USER || $password !== self::PASS) {            
+        if ($username !== config('kanye.basic_user') || $password !== config('kanye.basic_password')) {            
             throw new HttpException(Response::HTTP_UNAUTHORIZED);
         }
  
