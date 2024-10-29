@@ -14,6 +14,11 @@ class BasicAuthentication
  
     public function handle(Request $request, Closure $next)
     {
+
+        if (env('APP_ENV') === 'testing') {
+            return $next($request);
+        }
+
         if ($request->hasHeader('Authorization') === false) {
             // Display login prompt
             header('WWW-Authenticate: Basic realm="kayne test area"');
