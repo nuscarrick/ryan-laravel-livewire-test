@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use Livewire\Component;
+use App\Services\KanyeService;
 
 class Kanye extends Component
 {
@@ -13,8 +14,11 @@ class Kanye extends Component
       "Decentralize",
       "Distraction is the enemy of vision",
     ];
+    
     public function render()
-    {        
+    {   
+        $kanyeService = new KanyeService();
+        $this->data = $kanyeService->getList();        
         return view('livewire.kanye');
     }
 }
