@@ -21,4 +21,9 @@ class Kanye extends Component
         $this->data = $kanyeService->getList();        
         return view('livewire.kanye');
     }
+
+    public function refresh(){
+        $kanyeService = new KanyeService();
+        $this->data = $kanyeService->getList();
+    }
 }
