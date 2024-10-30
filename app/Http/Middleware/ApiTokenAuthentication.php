@@ -16,7 +16,7 @@ class ApiTokenAuthentication
     public function handle(Request $request, Closure $next): Response
     {                
         $api_key = config('kanye.api_key');
-        if (!!$api_key && $request->header('api_token') != $api_key) {
+        if (!!$api_key && $request->header('apitoken') != $api_key) {
           return response()->json('Unauthorized', 401);
         } 
 

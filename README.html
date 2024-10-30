@@ -1077,12 +1077,17 @@ body .markdown-body
 .highlight .il{color:#009999}
 .highlight .gc{color:#999;background-color:#EAF2F5}
 </style><title>README</title></head><body><article class="markdown-body"><h1 id="laravel-livewire-test">Laravel Livewire test<a class="headerlink" href="#laravel-livewire-test" title="Permanent link"></a></h1>
-<p>Demo site: <a href="https://ryan-laravel-livewire-test-540b2dab7fd6.herokuapp.com/">https://ryan-laravel-livewire-test-540b2dab7fd6.herokuapp.com/</a>
-Basic authentication: </p>
+<p>Demo site: <a href="https://ryan-laravel-livewire-test-540b2dab7fd6.herokuapp.com/">https://ryan-laravel-livewire-test-540b2dab7fd6.herokuapp.com/</a></p>
+<p>Basic authentication: </p>
 <div class="highlight"><pre>User: user
 Pasword: password
 </pre></div>
 
+<p>API token
+<div class="highlight"><pre>#Put it on header
+Key: apitoken
+Value: nus2024
+</pre></div></p>
 <p>It is used for the purpose of demo site for Laravel and livewire</p>
 <h1 id="precondition">Precondition<a class="headerlink" href="#precondition" title="Permanent link"></a></h1>
 <ul>
@@ -1122,7 +1127,7 @@ Pasword: password
 </pre></div></p>
 <p>Test the API via endpoint <a href="http://localhost/api/kanye/get_list">http://localhost/api/kanye/get_list</a></p>
 <h1 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link"></a></h1>
-<div class="highlight"><pre>API_KEY= #change it to secure API endpoint, need put API key to api_token header to bypass authentication
+<div class="highlight"><pre>API_KEY= #change it to secure API endpoint, need put API key to apitoken header to bypass authentication
 QUOTE_LIMIT=5 #change amount of quote retrived
 BASIC_USER=user 
 BASIC_PASSWORD=password

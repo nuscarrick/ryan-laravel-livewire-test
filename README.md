@@ -1,12 +1,22 @@
 # Laravel Livewire test
 
 Demo site: https://ryan-laravel-livewire-test-540b2dab7fd6.herokuapp.com/
+
 Basic authentication: 
 
 ```
 User: user
 Pasword: password
 ```
+
+API token
+```
+#Put it on header
+Key: apitoken
+Value: nus2024
+
+```
+
 
 It is used for the purpose of demo site for Laravel and livewire
 
@@ -73,7 +83,7 @@ Test the API via endpoint http://localhost/api/kanye/get_list
 
 # Configuration
 ```
-API_KEY= #change it to secure API endpoint, need put API key to api_token header to bypass authentication
+API_KEY= #change it to secure API endpoint, need put API key to apitoken header to bypass authentication
 QUOTE_LIMIT=5 #change amount of quote retrived
 BASIC_USER=user 
 BASIC_PASSWORD=password
