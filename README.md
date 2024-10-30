@@ -9,6 +9,8 @@ User: user
 Pasword: password
 ```
 
+API endpoint: https://ryan-laravel-livewire-test-540b2dab7fd6.herokuapp.com/api/kanye/get_list
+
 API token
 ```
 #Put it on header
@@ -18,7 +20,7 @@ Value: nus2024
 ```
 
 
-It is used for the purpose of demo site for Laravel and livewire
+It is used for the purpose of demo site for Laravel and Livewire
 
 # Precondition
 - Composer v2
@@ -84,10 +86,10 @@ Test the API via endpoint http://localhost/api/kanye/get_list
 # Configuration
 ```
 API_KEY= #change it to secure API endpoint, need put API key to apitoken header to bypass authentication
-QUOTE_LIMIT=5 #change amount of quote retrived
+QUOTE_LIMIT=5 #change amount of quote retrieved
 BASIC_USER=user 
 BASIC_PASSWORD=password
-QUOTE_INTERVAL=60000 #change internal time quote is fetched (as milisecond unit)
+QUOTE_INTERVAL=60000 #change internal time quote is fetched (as mili-second unit)
 ```
 
 
